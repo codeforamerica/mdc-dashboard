@@ -4,9 +4,9 @@
 
 The purpose of this project is to iterate the [Miami-Dade County Permit inquiry page](http://egvsys.miamidade.gov:1608/WWWSERV/ggvt/bnzaw960.dia) hoping to do the following:
 
-Find details about all permits associated under a given identifier: a name, a contracting license number, folio number or a property/address.
-We are making assumptions that the dashboard can be used both internally - by county employees - as well as externally, through homeowners or contractors.
-The application should be modular: we’re starting with permits, but dashboards could include other types of licensing, inspections, status checks, etc.
+- Find details about all permits associated under a given identifier: a name, a contracting license number, folio number or a property/address.
+- We are making assumptions that the dashboard can be used both internally - by county employees - as well as externally, through homeowners or contractors.
+- The application should be modular: we’re starting with permits, but dashboards could include other types of licensing, inspections, status checks, etc.
 
 ## TECHNICAL DETAILS
 
