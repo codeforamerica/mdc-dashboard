@@ -14,6 +14,8 @@ The first iteration of the prototype will be presented in HTML, CSS and Javascri
 
 Our goal is to use stubbed data (in the form of JSON objects) and then to do research on whether it would be feasible to scrape single-form submissions (Ruby or Python library? KimonoLabs?) or use the [fixed data set that was provided from Code for Miami](https://github.com/Code-for-Miami/2013-14-Permits-Issued-Data-Set).
 
+Also note that the Brigade took this fixed data and [imported the data set into Socrata](https://brigades.opendatanetwork.com/LAND-USE/Miami-Dade-County-Permits-Subset-/jjtb-34fh), which [comes with a baked RESTful API](https://brigades.opendatanetwork.com/developers/docs/miami-dade-county-permits-subset-).
+
 ### Installation Instructions
 
 TBA
