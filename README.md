@@ -20,23 +20,23 @@ Also note that the Brigade took this fixed data and [imported the data set into 
 
 ```
 First install Node http://nodejs.org/download/. From the command line at root
-`sudo npm update -g npm`
-`sudo npm install -g grunt-cli`
-`sudo npm install -g grunt-init`
-`git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile`
+sudo npm update -g npm
+sudo npm install -g grunt-cli
+sudo npm install -g grunt-init
+git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
 
 Next up is Ruby, also at command line at the root
 We'll install RVM for safety's sake:
-`\curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled`
-IF THAT FAILS with error 1, do: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` and then run the RVM curl command again
+\curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
+IF THAT FAILS with error 1, do: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" and then run the RVM curl command again
 
 http://code.tutsplus.com/tutorials/how-to-install-ruby-on-a-mac--net-21664
 go to step 2: load into the shell
 restart terminal after following Step 2.
-I'm installing Rails: `gem install rails` (just in case)
-and this to install Sass: `gem install sass`
-`gem install compass` (because we'll be using Compass to manage Gruntfile)
-`npm install grunt-contrib-sass --save-dev`
+I'm installing Rails: gem install rails (just in case)
+and this to install Sass: gem install sass
+gem install compass` (because we'll be using Compass to manage Gruntfile)
+npm install grunt-contrib-sass --save-dev
 ```
 
 ### Examples
