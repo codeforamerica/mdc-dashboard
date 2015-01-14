@@ -4,6 +4,9 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     // Task configuration.
+    pkg : grunt.file.readJSON('package.json'),
+    site: grunt.file.readYAML('src/data/site.yml'),
+    
     jshint: {
       options: {
         curly: true,
@@ -52,6 +55,26 @@ module.exports = function(grunt) {
 				tasks: ['compass']
 		}
 
+    },
+    assemble: {
+      // Task-level options
+      options: {
+        prettify: {indent: 2},
+        marked: {sanitize: false},
+        production: true,
+        data: 'src/**/*.{json,yml}',
+        assets: '<%= site.destination %>/assets',
+        helpers: 'src/helpers/helper-*.js',
+        layoutdir: 'src/templates/layouts',
+        partials: ['src/templates/includes/**/*.hbs'],
+      },
+      site: {
+        // Target-level options
+        options: {layout: 'default.hbs'},
+        files: [
+          { expand: true, cwd: 'src/templates/pages', src: ['*.hbs'], dest: '<%= site.destination %>/' }
+        ]
+      }
     }
   });
 
@@ -59,9 +82,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  //grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('assemble');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'watch', 'compass', 'assemble']);
 
 };
