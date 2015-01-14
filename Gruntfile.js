@@ -1,53 +1,53 @@
-/*global module:false*/
+/*
+ * Assemble, component generator for Grunt.js
+ * https://github.com/assemble/
+ *
+ * Copyright (c) 2013 Upstage
+ * Licensed under the MIT license.
+ */
+
+'use strict';
+
 module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    // Task configuration.
-    jshint: {
+    pkg : grunt.file.readJSON('package.json'),
+    site: grunt.file.readYAML('src/data/site.yml'),
+
+    assemble: {
+      // Task-level options
       options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        unused: true,
-        boss: true,
-        eqnull: true,
-        browser: true,
-        globals: {}
+        prettify: {indent: 2},
+        marked: {sanitize: false},
+        production: true,
+        data: 'src/**/*.{json,yml}',
+        assets: '<%= site.destination %>/assets',
+        helpers: 'src/helpers/helper-*.js',
+        layoutdir: 'src/templates/layouts',
+        partials: ['src/templates/includes/**/*.hbs'],
       },
-      gruntfile: {
-        src: 'Gruntfile.js'
-      },
-      lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
+      site: {
+        // Target-level options
+        options: {layout: 'default.hbs'},
+        files: [
+          { expand: true, cwd: 'src/templates/pages', src: ['*.hbs'], dest: '<%= site.destination %>/' }
+        ]
       }
     },
-    qunit: {
-      files: ['test/**/*.html']
-    },
-    watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
-      },
-      lib_test: {
-        files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'qunit']
-      }
+
+    // Before generating any new files,
+    // remove any previously-created files.
+    clean: {
+      all: ['<%= site.destination %>/**/*.{html,md}']
     }
   });
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-qunit');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  // Load npm plugins to provide necessary tasks.
+  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-verb');
 
-  // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit']);
-
+  // Default task to be run.
+  grunt.registerTask('default', ['clean', 'assemble']);
 };
