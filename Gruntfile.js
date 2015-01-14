@@ -40,14 +40,30 @@ module.exports = function(grunt) {
     // remove any previously-created files.
     clean: {
       all: ['<%= site.destination %>/**/*.{html,md}']
-    }
+    },
+    compass: {
+			dist: {
+				options: {
+					sassDir: 'sass',
+					cssDir: 'css'
+				}
+			}
+	  },
+	watch: {
+			css: {
+				files: '**/*.scss',
+				tasks: ['compass']
+			}
+		}
   });
 
   // Load npm plugins to provide necessary tasks.
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-verb');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-compass');
 
   // Default task to be run.
-  grunt.registerTask('default', ['clean', 'assemble']);
+  grunt.registerTask('default', ['watch', 'clean', 'assemble']);
 };
