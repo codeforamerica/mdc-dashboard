@@ -3,46 +3,58 @@
   <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="assets/bootstrap.css">
+    <!--<link rel="stylesheet" href="assets/bootstrap.css">-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+     
   </head>
-  <body>
+  
+  
     <!-- nav partial -->
-    <div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">ASSEMBLE</a>
-      <ul class="nav">
-        <li class="active">
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="markdown.html">Markdown</a>
-        </li>
-        <li>
-          <a href="examples.html">Examples</a>
-        </li>
-      </ul>
-      <ul class="nav pull-right">
-        <li> <a href="https://github.com/assemble/assemble-boilerplates">More Examples</a> </li>
-        <li> <a href="https://github.com/assemble/assemble/">Visit Assemble</a> </li>
-      </ul>
-    </div>
-  </div>
-</div>
+    <body> <!-- tag closed in html-foot -->
 
+<header>
+	
+	<nav>
+	
+	<li>LOGO</li>
+	<li>Apply for a permit</li>
+	<li>Check permit status</li>
+	<li>Schedule Inspection</li>
+	
+	<li class='right'>Return to RER</li>
+</nav>
+	
+</header>
 
     <div class="container">
+	    
       <!-- body partial, used for adding pages to layout -->
       
 
+<form method="GET" action="results.html">
+	<ul>
+		<li><input type="radio" name="search-type" value="permit"> Permit Number</li>
+		<li><input type="radio" name="search-type" value="process"> Process Number</li>
+		<li><input type="radio" name="search-type" value="address"> Address</li>
+		<li><input type="radio" name="search-type" value="folio"> Folio Number</li>
+		<li><input type="radio" name="search-type" value="contractor"> Contractor or Qualifier Number</li>
+	</ul>
+	
+		<input name="permit-id" placeholder="ID number or Address">
+		<input type="submit" />
+</form>
 
 
 
 
 
 
-
-      <script src="assets/highlight.js"></script>
+      
     </div>
-  </body>
+  
+  
+</body>
+
 </html>
