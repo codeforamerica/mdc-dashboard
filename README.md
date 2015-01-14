@@ -18,6 +18,7 @@ Also note that the Brigade took this fixed data and [imported the data set into 
 
 ### Installation Instructions
 
+```
 First install Node http://nodejs.org/download/. From the command line at root
 `sudo npm update -g npm`
 `sudo npm install -g grunt-cli`
@@ -36,6 +37,7 @@ I'm installing Rails: `gem install rails` (just in case)
 and this to install Sass: `gem install sass`
 `gem install compass` (because we'll be using Compass to manage Gruntfile)
 `npm install grunt-contrib-sass --save-dev`
+```
 
 ### Examples
 
