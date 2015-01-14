@@ -20,6 +20,14 @@ module.exports = function(grunt) {
         browser: true,
         globals: {}
       },
+      compass: {
+			dist: {
+				options: {
+					sassDir: 'sass',
+					cssDir: 'css'
+				}
+			}
+	  },
       gruntfile: {
         src: 'Gruntfile.js'
       },
@@ -38,7 +46,12 @@ module.exports = function(grunt) {
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
         tasks: ['jshint:lib_test', 'qunit']
-      }
+      },
+      css: {
+				files: '**/*.scss',
+				tasks: ['compass']
+		}
+
     }
   });
 
@@ -46,6 +59,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'qunit']);
