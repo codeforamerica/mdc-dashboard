@@ -18,6 +18,19 @@ $(document).ready(function() {
 	
 	function setForm(id) {
 		
-		$('#identifier-header').text(id);
+		switch (id) {
+			
+			case 'address':
+			
+				id = 'Please enter an address.';
+				break;
+				
+			default: 
+				
+				id = 'Please enter a ' + id + ' number.';
+				break;
+		}
+		
+		$('#identifier-header').replaceWith('<h2 id="identifier-header">' + id + '</h2>');
 	}
 });
