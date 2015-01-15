@@ -27,9 +27,20 @@ input[type="radio"].input_hidden {
   left: -9999px;
 }
 
+/* line 35, ../sass/app.scss */
+.icon {
+  display: block;
+}
+
+/* line 41, ../sass/app.scss */
+.icon-icon-logo {
+  width: 125px;
+  height: 170px;
+}
+
 /* end utility classes */
 @media only screen and (min-width: 320px) {
-  /* line 40, ../sass/app.scss */
+  /* line 51, ../sass/app.scss */
   body {
     width: 100%;
     height: auto;
@@ -44,34 +55,40 @@ input[type="radio"].input_hidden {
 /* Larger than tablet */
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  /* line 67, ../sass/app.scss */
+  /* line 76, ../sass/app.scss */
   body {
     width: 1200px;
     border: 1px solid red;
   }
 
-  /* line 73, ../sass/app.scss */
+  /* line 82, ../sass/app.scss */
   nav {
     width: 100%;
     margin: 0 auto;
-    height: 50px;
+    height: 175px;
     border: 1px solid blue;
     color: red;
   }
 
-  /* line 82, ../sass/app.scss */
+  /* line 91, ../sass/app.scss */
   nav li {
+    margin-top: 60px;
     display: inline-block;
     list-style: none;
   }
 
-  /* line 88, ../sass/app.scss */
+  /* line 98, ../sass/app.scss */
+  nav .left.icon {
+    margin-top: 0;
+  }
+
+  /* line 103, ../sass/app.scss */
   .button {
     width: 20%;
     border: 1px solid green;
   }
 
-  /* line 94, ../sass/app.scss */
+  /* line 109, ../sass/app.scss */
   .faux-radio,
   .faux-radio img {
     cursor: pointer;

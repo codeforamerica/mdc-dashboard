@@ -11,29 +11,40 @@ html {
 }
 
 /* utility classes */
-	.right {
+.right {
 		
-		float:right;
-	}
+	float:right;
+}
 	
-	.left {
+.left {
 		
-		float:left;
-	}
+	float:left;
+}
 	
-	.center {
+.center {
 		
-		margin:0 auto;
-		text-align: center;
-	}
+	margin:0 auto;
+	text-align: center;
+}
 	
-	input[type="radio"].input_hidden {
-	    position: absolute;
-	    left: -9999px;
-	}
+input[type="radio"].input_hidden {
+    position: absolute;
+    left: -9999px;
+}
 		
+.icon {
+		
+	display:block;
+		
+}
 	
-	/* end utility classes */
+.icon-icon-logo {
+		
+	width:125px;
+	height:170px;
+}
+
+/* end utility classes */
 
 @media only screen and (min-width:320px) {
 	
@@ -62,8 +73,6 @@ html {
 /* Larger than desktop */
 @media (min-width: 1000px) {
 	
-	
-	
 	body {
 		
 		width:1200px;
@@ -74,15 +83,21 @@ html {
 		
 		width:100%;
 		margin:0 auto;
-		height:50px;
+		height:175px;
 		@include border(blue);
 		color:red;
 	}
 	
 	nav li {
 		
+		margin-top:60px;
 		display:inline-block;
 		list-style: none;
+	}
+	
+	nav .left.icon {
+		
+		margin-top:0;
 	}
 	
 	.button {
