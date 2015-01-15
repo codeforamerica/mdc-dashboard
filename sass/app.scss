@@ -57,6 +57,11 @@ input[type="radio"].input_hidden {
 	font-weight:700;
 }
 
+.hide {
+	
+	display:none !important;
+}
+
 /* end utility classes */
 
 @media only screen and (min-width:320px) {
@@ -146,13 +151,12 @@ input[type="radio"].input_hidden {
 		color:white;
 		
 		width:200px;
-		height:200px;
+		height:170px;
 		display:inline-block;
 		vertical-align: top;
 		margin-left:15px;
 		margin-right:15px;
-		
-		
+	
 	}
 	
 	.faux-radio:hover {
@@ -164,11 +168,13 @@ input[type="radio"].input_hidden {
 	.faux-radio .icon {
 		
 		display:block;
-		width:100px;
-		height:100px;
+		width:75px;
+		height:75px;
 		margin:0 auto;
 		text-align: center;
 		background-position: center center;
+		
+		margin-top:30px;
 	}
 	
 	.faux-radio .icon p {
