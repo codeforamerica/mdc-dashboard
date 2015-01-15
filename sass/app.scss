@@ -3,6 +3,14 @@
 	border:1px solid $color;
 }
 
+@mixin roundedBorder($color, $radius) {
+	
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	border:1px solid $color;
+
+}
+
 html {
 	
 	width:100%;
@@ -42,6 +50,16 @@ input[type="radio"].input_hidden {
 		
 	width:125px;
 	height:170px;
+}
+
+.bold {
+	
+	font-weight:700;
+}
+
+.hide {
+	
+	display:none !important;
 }
 
 /* end utility classes */
@@ -93,6 +111,7 @@ input[type="radio"].input_hidden {
 		margin-top:60px;
 		display:inline-block;
 		list-style: none;
+		
 	}
 	
 	nav .left.icon {
@@ -103,14 +122,64 @@ input[type="radio"].input_hidden {
 	.button {
 	
 		width:20%;	
-		@include border(green);
+		@include border(#aad315);
 	}
 	
+	.container {
+		
+		margin-top:30px;
+		
+	}
+	
+	.row {
+		
+		margin-bottom:30px;
+	}
 	.faux-radio,
-	.faux-radio img {
+	.faux-radio img,
+	.faux-radio .icon {
 		
 		cursor:pointer;
 		
+	}
+	
+	.faux-radio {
+		
+		@include roundedBorder(#aad315, 15px);
+		border-width:5px;
+		background-color:rgba(170,211,21, .8);
+		color:white;
+		
+		width:200px;
+		height:170px;
+		display:inline-block;
+		vertical-align: top;
+		margin-left:15px;
+		margin-right:15px;
+	
+	}
+	
+	.faux-radio:hover {
+		
+		color: #aad315;
+		background-color: white;
+	}
+	
+	.faux-radio .icon {
+		
+		display:block;
+		width:75px;
+		height:75px;
+		margin:0 auto;
+		text-align: center;
+		background-position: center center;
+		
+		margin-top:30px;
+	}
+	
+	.faux-radio .icon p {
+		
+		padding-top:100px;
 	}
 }
 
