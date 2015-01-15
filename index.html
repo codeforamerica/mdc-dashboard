@@ -39,17 +39,26 @@
 
 <form method="GET" action="results.html">
 
-	<ul>
-		<li><input type="radio" name="search-type" value="permit"> Permit Number</li>
-		<li><input type="radio" name="search-type" value="process"> Process Number</li>
-		<li><input type="radio" name="search-type" value="address"> Address</li>
-		<li><input type="radio" name="search-type" value="folio"> Folio Number</li>
-		<li><input type="radio" name="search-type" value="contractor"> Contractor or Qualifier Number</li>
-	</ul>
+
+	<div class='row center'>
+		
+		<div class='three columns'><input class='identifier' type="radio" name="search-type" value="permit" id='permit'> Permit Number</div>
+		<div class='three columns'><input class='identifier' type="radio" name="search-type" value="process" id='process'> Process Number</div>
+		<div class='three columns'><input class='identifier' type="radio" name="search-type" value="address" id='address'> Address</div>
+		
+	</div>
 	
+	<div class='row center'>
+		<div class='six columns'><input class='identifier' type="radio" name="search-type" value="folio" id='folio'> Folio Number</div>
+		<div class='six columns'><input class='identifier' type="radio" name="search-type" value="contractor" id='contractor'> Contractor or Qualifier Number</div>
+	</div>
+		
+	</div>
+	
+	<div class='row center'>	
 		<input name="permit-id" placeholder="ID number or Address">
 		<input type="submit" />
-
+	</div>
 </form>
 
 

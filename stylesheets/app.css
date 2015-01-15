@@ -25,14 +25,20 @@ html {
   float: left;
 }
 
+/* line 37, ../sass/app.scss */
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* end utility classes */
-/* line 39, ../sass/app.scss */
+/* line 45, ../sass/app.scss */
 body {
   width: 1200px;
   border: 1px solid red;
 }
 
-/* line 45, ../sass/app.scss */
+/* line 51, ../sass/app.scss */
 nav {
   width: 100%;
   margin: 0 auto;
@@ -41,13 +47,13 @@ nav {
   color: red;
 }
 
-/* line 54, ../sass/app.scss */
+/* line 60, ../sass/app.scss */
 nav li {
   display: inline-block;
   list-style: none;
 }
 
-/* line 60, ../sass/app.scss */
+/* line 66, ../sass/app.scss */
 .button {
   width: 20%;
   border: 1px solid green;
