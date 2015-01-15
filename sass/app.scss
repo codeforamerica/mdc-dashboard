@@ -40,6 +40,12 @@ html {
 	text-align: center;
 }
 
+input[type="radio"].input_hidden {
+    position: absolute;
+    left: -9999px;
+}
+	
+
 /* end utility classes */
 
 body {
@@ -67,5 +73,12 @@ nav li {
 
 	width:20%;	
 	@include border(green);
+}
+
+.faux-radio,
+.faux-radio img {
+	
+	cursor:pointer;
+	
 }
 

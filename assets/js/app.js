@@ -3,6 +3,7 @@ $(document).ready(function() {
 	console.log("hello world");
 	
 	//smart radio buttons
+	$('.identifier').addClass('input_hidden');
 	$('.identifier').click(function(e) {
 		
 		e.preventDefault();

@@ -31,14 +31,20 @@ html {
   text-align: center;
 }
 
+/* line 43, ../sass/app.scss */
+input[type="radio"].input_hidden {
+  position: absolute;
+  left: -9999px;
+}
+
 /* end utility classes */
-/* line 45, ../sass/app.scss */
+/* line 51, ../sass/app.scss */
 body {
   width: 1200px;
   border: 1px solid red;
 }
 
-/* line 51, ../sass/app.scss */
+/* line 57, ../sass/app.scss */
 nav {
   width: 100%;
   margin: 0 auto;
@@ -47,14 +53,20 @@ nav {
   color: red;
 }
 
-/* line 60, ../sass/app.scss */
+/* line 66, ../sass/app.scss */
 nav li {
   display: inline-block;
   list-style: none;
 }
 
-/* line 66, ../sass/app.scss */
+/* line 72, ../sass/app.scss */
 .button {
   width: 20%;
   border: 1px solid green;
+}
+
+/* line 78, ../sass/app.scss */
+.faux-radio,
+.faux-radio img {
+  cursor: pointer;
 }

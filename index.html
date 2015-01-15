@@ -42,22 +42,55 @@
 
 	<div class='row center'>
 		
-		<div class='three columns'><input class='identifier' type="radio" name="search-type" value="permit" id='permit'> Permit Number</div>
-		<div class='three columns'><input class='identifier' type="radio" name="search-type" value="process" id='process'> Process Number</div>
-		<div class='three columns'><input class='identifier' type="radio" name="search-type" value="address" id='address'> Address</div>
+		<div class='four columns faux-radio'>
+			
+			<input class='identifier' type="radio" name="search-type" value="permit" id='permit'> 
+			<label for="permit"><img src="http://placekitten.com/g/200/200"/></label>
+			<p>Permit Number</p>
+			
+		</div>
+		
+		<div class='four columns faux-radio'>
+			
+			<input class='identifier' type="radio" name="search-type" value="process" id='process'>
+			<label for="process"><img src="http://placekitten.com/g/200/200"/></label>
+			<p>Process Number</p>
+		</div>
+		
+		<div class='four columns faux-radio'>
+			
+			<input class='identifier' type="radio" name="search-type" value="address" id='address'>
+			<label for="address"><img src="http://placekitten.com/g/200/200"/></label>
+			<p>Address</p>
+			
+		</div>
 		
 	</div>
 	
 	<div class='row center'>
-		<div class='six columns'><input class='identifier' type="radio" name="search-type" value="folio" id='folio'> Folio Number</div>
-		<div class='six columns'><input class='identifier' type="radio" name="search-type" value="contractor" id='contractor'> Contractor or Qualifier Number</div>
+		
+		<div class='six columns faux-radio'>
+			
+			<input class='identifier' type="radio" name="search-type" value="folio" id='folio'> 
+			<label for="folio"><img src="http://placekitten.com/g/200/200"/></label>
+			<p>Folio Number</p>
+			
+		</div>
+		
+		<div class='six columns faux-radio'>
+			
+			<input class='identifier' type="radio" name="search-type" value="contractor" id='contractor'> 
+			<label for="contractor"><img src="http://placekitten.com/g/200/200"/></label>
+			<p>Contractor or Qualifier Number</p>
+			
+		</div>
 	</div>
 		
 	</div>
 	
 	<div class='row center'>	
 		
-		<h1 id='identifier-header'></h1>
+		<h2 id='identifier-header'></h2>
 		<input name="permit-id" placeholder="ID number or Address">
 		<input type="submit" />
 	</div>
