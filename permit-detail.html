@@ -11,6 +11,25 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
+
+    <script language="javascript">
+
+$(document).ready(function() {
+	$("#expandtable tbody tr:even").addClass("toggle-row");
+	$("#expandtable tbody tr:not(.toggle-row)").hide();	
+	$("#expandtable tbody tr").click(function(){
+	    $(this).next('tr').toggle();
+	    // $(this).find(".arrow").toggleClass("up");
+	});
+});
+
+    </script>
+
+    <style>
+.toggle-row {
+	cursor: pointer;
+}    
+    </style>
      
   </head>
   <body>
@@ -30,10 +49,7 @@
 	
 </header>
 
-<a class="button-primary button" href="#">Request Inspection</a>
-<a class="button-primary button" href="#">Request Fire Inspection</a>
-
-<div class="container">
+<div class="container" style="padding-top:4rem;">
 
 <div class="u-pull-left" style="text-align:left;">
 	<h5 style="margin-bottom:0;">Permit #2014000274</h5>
@@ -74,7 +90,7 @@
     <div class="two-thirds column">
 		<h6 style="text-transform:uppercase; letter-spacing:0.2rem; font-weight:800; margin-bottom:0; text-align:left;">Inspection History</h6> 
 
-		<table class="u-full-width">
+		<table id="expandtable" class="u-full-width">
 			<thead>
 				<tr>
 					<th>Inspector Name</th>
@@ -149,6 +165,7 @@
 
     </div>
     <div class="one-third column">
+
     	<h6 style="text-transform:uppercase; letter-spacing:0.2rem; font-weight:800; margin-bottom:0; text-align:left;">Permit History</h6> 
 
     	<table>
@@ -178,7 +195,8 @@
     		</tbody>
     	</table>
 
-
+<a class="button-primary button" style="width:auto;" href="#">Request Inspection</a>
+<a class="button-primary button" style="width:auto;" href="#">Request Fire Inspection</a>
 
     </div>
 </div>
