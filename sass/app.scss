@@ -10,6 +10,31 @@ html {
 	
 }
 
+/* utility classes */
+	.right {
+		
+		float:right;
+	}
+	
+	.left {
+		
+		float:left;
+	}
+	
+	.center {
+		
+		margin:0 auto;
+		text-align: center;
+	}
+	
+	input[type="radio"].input_hidden {
+	    position: absolute;
+	    left: -9999px;
+	}
+		
+	
+	/* end utility classes */
+
 @media only screen and (min-width:320px) {
 	
 	body {
@@ -23,62 +48,66 @@ html {
 
 /* MEDIA BREAK */
 
-/* utility classes */
-.right {
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
 	
-	float:right;
+	
+	
+	body {
+		
+		width:1200px;
+		@include border(red);
+	}
+	
+	nav {
+		
+		width:100%;
+		margin:0 auto;
+		height:50px;
+		@include border(blue);
+		color:red;
+	}
+	
+	nav li {
+		
+		display:inline-block;
+		list-style: none;
+	}
+	
+	.button {
+	
+		width:20%;	
+		@include border(green);
+	}
+	
+	.faux-radio,
+	.faux-radio img {
+		
+		cursor:pointer;
+		
+	}
 }
 
-.left {
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
 	
-	float:left;
-}
-
-.center {
-	
-	margin:0 auto;
-	text-align: center;
-}
-
-input[type="radio"].input_hidden {
-    position: absolute;
-    left: -9999px;
-}
 	
 
-/* end utility classes */
 
-body {
-	
-	width:1200px;
-	@include border(red);
-}
-
-nav {
-	
-	width:100%;
-	margin:0 auto;
-	height:50px;
-	@include border(blue);
-	color:red;
-}
-
-nav li {
-	
-	display:inline-block;
-	list-style: none;
-}
-
-.button {
-
-	width:20%;	
-	@include border(green);
-}
-
-.faux-radio,
-.faux-radio img {
-	
-	cursor:pointer;
 	
 }
+
+
+
 

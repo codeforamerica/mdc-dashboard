@@ -4,8 +4,32 @@ html {
   height: 100%;
 }
 
+/* utility classes */
+/* line 14, ../sass/app.scss */
+.right {
+  float: right;
+}
+
+/* line 19, ../sass/app.scss */
+.left {
+  float: left;
+}
+
+/* line 24, ../sass/app.scss */
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 30, ../sass/app.scss */
+input[type="radio"].input_hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* end utility classes */
 @media only screen and (min-width: 320px) {
-  /* line 15, ../sass/app.scss */
+  /* line 40, ../sass/app.scss */
   body {
     width: 100%;
     height: auto;
@@ -14,59 +38,43 @@ html {
   }
 }
 /* MEDIA BREAK */
-/* utility classes */
-/* line 27, ../sass/app.scss */
-.right {
-  float: right;
-}
+/* Mobile first queries */
+/* Larger than mobile */
+/* Larger than phablet */
+/* Larger than tablet */
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  /* line 67, ../sass/app.scss */
+  body {
+    width: 1200px;
+    border: 1px solid red;
+  }
 
-/* line 32, ../sass/app.scss */
-.left {
-  float: left;
-}
+  /* line 73, ../sass/app.scss */
+  nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    border: 1px solid blue;
+    color: red;
+  }
 
-/* line 37, ../sass/app.scss */
-.center {
-  margin: 0 auto;
-  text-align: center;
-}
+  /* line 82, ../sass/app.scss */
+  nav li {
+    display: inline-block;
+    list-style: none;
+  }
 
-/* line 43, ../sass/app.scss */
-input[type="radio"].input_hidden {
-  position: absolute;
-  left: -9999px;
-}
+  /* line 88, ../sass/app.scss */
+  .button {
+    width: 20%;
+    border: 1px solid green;
+  }
 
-/* end utility classes */
-/* line 51, ../sass/app.scss */
-body {
-  width: 1200px;
-  border: 1px solid red;
+  /* line 94, ../sass/app.scss */
+  .faux-radio,
+  .faux-radio img {
+    cursor: pointer;
+  }
 }
-
-/* line 57, ../sass/app.scss */
-nav {
-  width: 100%;
-  margin: 0 auto;
-  height: 50px;
-  border: 1px solid blue;
-  color: red;
-}
-
-/* line 66, ../sass/app.scss */
-nav li {
-  display: inline-block;
-  list-style: none;
-}
-
-/* line 72, ../sass/app.scss */
-.button {
-  width: 20%;
-  border: 1px solid green;
-}
-
-/* line 78, ../sass/app.scss */
-.faux-radio,
-.faux-radio img {
-  cursor: pointer;
-}
+/* Larger than Desktop HD */
