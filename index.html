@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <!--<link rel="stylesheet" href="assets/bootstrap.css">-->
+    
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/app.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
@@ -18,10 +21,11 @@
 	
 	<nav>
 	
-	<li>LOGO</li>
-	<li>Apply for a permit</li>
-	<li>Check permit status</li>
-	<li>Schedule Inspection</li>
+	<li class='left'>LOGO</li>
+	
+	<li class='button'>Apply for a permit</li>
+	<li class='button'>Check permit status</li>
+	<li class='button'>Schedule Inspection</li>
 	
 	<li class='right'>Return to RER</li>
 </nav>
@@ -34,6 +38,7 @@
       
 
 <form method="GET" action="results.html">
+
 	<ul>
 		<li><input type="radio" name="search-type" value="permit"> Permit Number</li>
 		<li><input type="radio" name="search-type" value="process"> Process Number</li>
@@ -44,6 +49,7 @@
 	
 		<input name="permit-id" placeholder="ID number or Address">
 		<input type="submit" />
+
 </form>
 
 
