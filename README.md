@@ -10,13 +10,9 @@ The purpose of this project is to iterate the [Miami-Dade County Permit inquiry 
 
 ## Technical Details
 
-The first iteration of the prototype will be presented in HTML, CSS and jQuery. Assume that we are building for IE8.
+The first iteration of the prototype was presented as a static prototype using HTML, CSS and jQuery due to time restraints. Build tools included the use of the following: grunt, Sass, assemble.io.
 
-Our goal was to use stubbed data (in the form of JSON objects) and then to do research on whether it would be feasible to scrape single-form submissions (Ruby or Python library? KimonoLabs?) or use the [fixed data set that was provided from Code for Miami](https://github.com/Code-for-Miami/2013-14-Permits-Issued-Data-Set).
-
-Also note that the Brigade took this fixed data and [imported the data set into Socrata](https://brigades.opendatanetwork.com/LAND-USE/Miami-Dade-County-Permits-Subset-/jjtb-34fh), which [comes with a baked RESTful API](https://brigades.opendatanetwork.com/developers/docs/miami-dade-county-permits-subset-).
-
-Due to time constraints we presented a UI-based proof of concept using static data.
+Our goal was to use stubbed data (in the form of JSON objects) and then to do research on whether it would be feasible to scrape single-form submissions (Ruby or Python library? KimonoLabs?) or use the [fixed data set that was provided from Code for Miami](https://github.com/Code-for-Miami/2013-14-Permits-Issued-Data-Set), taking advantage of a [data input into Socrata](https://brigades.opendatanetwork.com/LAND-USE/Miami-Dade-County-Permits-Subset-/jjtb-34fh), which [comes with a baked RESTful APIs](https://brigades.opendatanetwork.com/developers/docs/miami-dade-county-permits-subset-).
 
 ### Installation Instructions
 
