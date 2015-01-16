@@ -87,15 +87,27 @@ input[type="radio"].input_hidden {
 	color:#222 !important;
 }
 
-a {
+.button a {
 	
 	color:inherit;
 	text-decoration:none;
 }
 
-a:hover {
+.button a:hover {
 	
 	color:inherit;
+}
+
+a {
+	
+	color: #aad315;
+	text-decoration:none;
+}
+
+a:hover {
+	
+	text-decoration:underline;
+	color:#aad315;
 }
 
 /* end utility classes */
@@ -136,7 +148,7 @@ a:hover {
 	
 	#language-toggle {
 		
-		width:40%;
+		width:41%;
 	}
 	
 	#language-toggle .left {
@@ -266,6 +278,18 @@ a:hover {
 	.faux-radio .icon p {
 		
 		padding-top:100px;
+	}
+	
+	footer {
+		
+		color: #717070;
+		border-top:1px solid #dddddd;
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+	footer p {
+		
+		margin-bottom:0;
 	}
 }
 

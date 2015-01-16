@@ -77,19 +77,31 @@ input[type="radio"].input_hidden {
 }
 
 /* line 90, ../sass/app.scss */
-a {
+.button a {
   color: inherit;
   text-decoration: none;
 }
 
 /* line 96, ../sass/app.scss */
-a:hover {
+.button a:hover {
   color: inherit;
+}
+
+/* line 101, ../sass/app.scss */
+a {
+  color: #aad315;
+  text-decoration: none;
+}
+
+/* line 107, ../sass/app.scss */
+a:hover {
+  text-decoration: underline;
+  color: #aad315;
 }
 
 /* end utility classes */
 @media only screen and (min-width: 320px) {
-  /* line 105, ../sass/app.scss */
+  /* line 117, ../sass/app.scss */
   body {
     width: 100%;
     height: auto;
@@ -104,26 +116,26 @@ a:hover {
 /* Larger than tablet */
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  /* line 130, ../sass/app.scss */
+  /* line 142, ../sass/app.scss */
   #language-toggle-wrapper {
     background-color: #aad315;
     width: 100%;
     padding-top: 13px;
   }
 
-  /* line 137, ../sass/app.scss */
+  /* line 149, ../sass/app.scss */
   #language-toggle {
-    width: 40%;
+    width: 41%;
   }
 
-  /* line 142, ../sass/app.scss */
+  /* line 154, ../sass/app.scss */
   #language-toggle .left {
     color: white;
     padding-right: 0;
     vertical-align: bottom;
   }
 
-  /* line 149, ../sass/app.scss */
+  /* line 161, ../sass/app.scss */
   #language-toggle li {
     display: inline;
     padding-right: 40px;
@@ -131,29 +143,29 @@ a:hover {
     margin-bottom: 0;
   }
 
-  /* line 157, ../sass/app.scss */
+  /* line 169, ../sass/app.scss */
   #language-toggle .left p {
     padding-top: 7px;
   }
 
-  /* line 163, ../sass/app.scss */
+  /* line 175, ../sass/app.scss */
   #language-toggle li.button {
     background-color: white;
     border-color: white;
     opacity: .5;
   }
 
-  /* line 170, ../sass/app.scss */
+  /* line 182, ../sass/app.scss */
   #language-toggle li.button.three {
     padding-right: 25px;
   }
 
-  /* line 175, ../sass/app.scss */
+  /* line 187, ../sass/app.scss */
   #language-toggle li.button:hover {
     opacity: 1;
   }
 
-  /* line 180, ../sass/app.scss */
+  /* line 192, ../sass/app.scss */
   nav {
     width: 100%;
     margin: 0 auto;
@@ -161,48 +173,48 @@ a:hover {
     color: red;
   }
 
-  /* line 188, ../sass/app.scss */
+  /* line 200, ../sass/app.scss */
   nav li {
     margin-top: 10px;
     display: inline-block;
     list-style: none;
   }
 
-  /* line 196, ../sass/app.scss */
+  /* line 208, ../sass/app.scss */
   nav .left.icon {
     margin-top: 0;
   }
 
-  /* line 201, ../sass/app.scss */
+  /* line 213, ../sass/app.scss */
   .container {
     width: 1200px;
     border: 1px solid red;
   }
 
-  /* line 208, ../sass/app.scss */
+  /* line 220, ../sass/app.scss */
   .button {
     width: 20%;
     border: 1px solid #aad315;
   }
 
-  /* line 214, ../sass/app.scss */
+  /* line 226, ../sass/app.scss */
   .container {
     margin-top: 30px;
   }
 
-  /* line 220, ../sass/app.scss */
+  /* line 232, ../sass/app.scss */
   .row {
     margin-bottom: 30px;
   }
 
-  /* line 224, ../sass/app.scss */
+  /* line 236, ../sass/app.scss */
   .faux-radio,
   .faux-radio img,
   .faux-radio .icon {
     cursor: pointer;
   }
 
-  /* line 232, ../sass/app.scss */
+  /* line 244, ../sass/app.scss */
   .faux-radio {
     -webkit-border-radius: 15px;
     border-radius: 15px;
@@ -218,13 +230,13 @@ a:hover {
     margin-right: 15px;
   }
 
-  /* line 248, ../sass/app.scss */
+  /* line 260, ../sass/app.scss */
   .faux-radio:hover {
     color: #aad315;
     background-color: white;
   }
 
-  /* line 254, ../sass/app.scss */
+  /* line 266, ../sass/app.scss */
   .faux-radio .icon {
     display: block;
     width: 75px;
@@ -235,9 +247,22 @@ a:hover {
     margin-top: 30px;
   }
 
-  /* line 266, ../sass/app.scss */
+  /* line 278, ../sass/app.scss */
   .faux-radio .icon p {
     padding-top: 100px;
+  }
+
+  /* line 283, ../sass/app.scss */
+  footer {
+    color: #717070;
+    border-top: 1px solid #dddddd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  /* line 290, ../sass/app.scss */
+  footer p {
+    margin-bottom: 0;
   }
 }
 /* Larger than Desktop HD */

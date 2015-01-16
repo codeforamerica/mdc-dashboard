@@ -1,31 +1,66 @@
-<html>
-	<head>
-		<title>Miami-Dade Permit Results</title>
-		<link rel="stylesheet" href="stylesheets/normalize.css">
-		<link rel="stylesheet" href="stylesheets/skeleton.css">
-		<link rel="stylesheet" href="stylesheets/app.css">
-		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/app.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <script>
+			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+			window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+			grunticon( [ "assets/css/icons.data.svg.css", "assets/css/icons.data.png.css", "assets/css/icons.fallback.css" ] );
+		</script>
+		<noscript><link href="assets/css/icons.fallback.css" rel="stylesheet"></noscript>
+     
+  </head>
+  
+  
+    <!-- nav partial -->
+    <body> <!-- tag closed in html-foot -->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="assets/js/app.js"></script>
-	</head>
-	<body>
 <header>
 	
-	<nav>
+	<div class='row' id='language-toggle-wrapper'>
+
+	<ul class='right' id='language-toggle'>
+		<li class='left'><p>Please choose your language.</p>
+		<li class='button one column active reverse'>EN</li>
+		<li class='button one column'>ES</li>
+		<li class='button three columns'><a href='http://www.miamidade.gov/economy/'>Go to RER</a></li>
+	</ul>
 	
-	<li class='left icon icon-icon-logo'></li>
+</div>
+
+<nav>
+	
+	<!--<li class='left icon icon-icon-logo'></li>-->
 	
 	<li class='button'>Apply for a permit</li>
 	<li class='button active'>Check permit status</li>
 	<li class='button'>Schedule Inspection</li>
 	
-	<li class='right button two columns'>Return to RER</li>
+	
+	
 </nav>
 	
 </header>
-		
-		<div class="container">
+
+    <div class="container">
+	    
+      <!-- body partial, used for adding pages to layout -->
+      
+
+<div class="container">
 
 		<div class="" style="text-align:left;">
 			<h5 style="margin-bottom:0;">Miami-Dade Permit Results</h5>
@@ -73,5 +108,18 @@
 			<tfoot></tfoot>
 		</table>
 		</div>
-	</body>
+
+      
+    </div>
+  
+  
+<footer>
+	
+	<p><span class='bold'>The Unnamed Project</span> by Team Miami-Dade: Mathias Gibson, Sophia Dengo, Ernie Hsiung. Build Week 2015.</p>
+	<p>Icons from <a href='thenounproject.com' target="_blank">The Noun Project</a>, specifically: Michele Zamparo, Marek Polakovic, Nick Abrams, Pham Thi Dieu Linh, Samuel Q. Green, and iconsmind.com</p>
+	
+</footer>
+
+</body>
+
 </html>
