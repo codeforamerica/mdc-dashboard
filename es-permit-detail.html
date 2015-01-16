@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Permit Details</title>
+    
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <script language="javascript">
+
+$(document).ready(function() {
+	$("#expandtable tbody tr:even").addClass("toggle-row");
+	$("#expandtable tbody tr:not(.toggle-row)").hide();	
+	$("#expandtable tbody tr").click(function(){
+	    $(this).next('tr').toggle();
+	    // $(this).find(".arrow").toggleClass("up");
+	});
+});
+
+    </script>
+
+    <style>
+.toggle-row {
+	cursor: pointer;
+}    
+    </style>
+     
+  </head>
+  <body>
+
+<header>
+	
+	<nav>
+	
+	<li class='left icon icon-icon-logo'></li>
+	
+	<li class='button'>Apply for a permit</li>
+	<li class='button active'>Check permit status</li>
+	<li class='button'>Schedule Inspection</li>
+	
+	<li class='right button two columns'>Return to RER</li>
+</nav>
+	
+</header>
+
+<div class="container" style="padding-top:4rem;">
+
+<div class="u-pull-left" style="text-align:left;">
+	<h5 style="margin-bottom:0;">Permit #2014000274</h5>
+	<h6 style="margin-bottom:0;">Process #: C2013043261<br />
+		Folio #: 30-4909-020-0040
+	</h6>
+</div>
+
+<div class="u-pull-right" style="text-align:left;">
+	<h6 style="text-transform:uppercase; letter-spacing:0.2rem; font-weight:800; margin-bottom:0; ">Owner</h6>
+	CAMVER INVEST INC<br />
+		1840 SW 154 AVE
+</div>
+
+<div class="u-pull-right" style="margin-right:1.5rem;text-align:left;">
+	<h6 style="text-transform:uppercase; letter-spacing:0.2rem; font-weight:800; margin-bottom:0;">Contractor</h6>
+	CGC1512854<br>
+	WECHSLER CONSTRUCTION GROUP INC<br />
+	WECHSLER SOLOMON AVRAM
+</div>
+
+<table class="u-full-width u-cf">
+	<thead>
+		<th>Permit Status</th>
+		<th>Issue Date</th>
+		<th>Categories</th>
+		<th>Proposed Use</th>
+	</thead>
+	<tbody>
+		<td>FINALIZED</td>
+		<td>10/01/2013</th>
+		<td>BUILDING (COUNTY)</td>
+		<td>SINGLE FAM RES-CLUST-ZERO LOT-TOWN</td>
+	</tbody>
+</table>
+
+<div class="row">
+    <div class="two-thirds column">
+		<h6 style="text-transform:uppercase; letter-spacing:0.2rem; font-weight:800; margin-bottom:0; text-align:left;">Inspection History</h6> 
+
+		<table id="expandtable" class="u-full-width">
+			<thead>
+				<tr>
+					<th>Inspector Name</th>
+					<th>Request Date</th>
+					<th>Inspection Type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>DEVILME, JEAN SOCRATE</td>
+					<td>01/29/2014</td>
+					<td>ROOF TRUSS/PERM BRACING/SHEATH</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						Clerk Name:	 INTERNET REQUEST	<br>
+						Inspection Time:	 711<br>
+						Comments:	 RICARDO DEL CUADRO 3055998100<br>
+						Inspection Date: 01/30/2014<br>
+						Disposition: CANCELLATION BY THE INTERNET	
+					</td>
+				</tr>
+				<tr>
+					<td>ERRICKSON, SPENCER P.</td>
+					<td>01/28/2014</td>
+					<td>ROOF TRUSS/PERM BRACING/SHEATH	Inspection</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+		Result Date:	 01/29/2014<br>
+		Clerk Name:	 INTERNET REQUEST	<br>
+		Inspection Time:	 926<br>
+		Comments:	 ROOF SHEATHING OK - PERM BRACING NOT PER PLAN<br>
+		Inspection Date: 01/29/2014<br>
+		Disposition: APPRVD PARTIAL/EXTRA INSP REQ</td>
+					</td>
+				</tr>		
+			</tbody>
+		</table>    
+
+    	<h6 style="text-transform:uppercase; letter-spacing:0.2rem; font-weight:800; margin-bottom:0; text-align:left;">Permit Inspection Holds</h6> 
+
+    	<table>
+    		<tbody>
+    			<tr>
+    				<th>Inspection Hold Code</th>
+    				<td>060</td>
+    			</tr>
+    			<tr>
+    				<th>Hold Status</th>
+    				<td>RELEASED</td>
+    			</tr>
+    			<tr>
+    				<th>Description</th>
+    				<td>REINSP/ADDNTL INSP FEE SYS-GEN</td>
+    			</tr>
+    			<tr>
+    				<th>Date Applied</th>
+    				<td>02/03/2014</td>
+    			</tr>
+    			<tr>
+    				<th>Applied by</th>
+    				<td>COMPUTER GENERATED (J854030)</td>
+    			</tr>
+    			<tr>
+    				<th>Date Released</th>
+    				<td>03/20/2014</td>
+    			</tr>    			
+    		</tbody>
+    	</table>
+
+
+    </div>
+    <div class="one-third column">
+
+    	<h6 style="text-transform:uppercase; letter-spacing:0.2rem; font-weight:800; margin-bottom:0; text-align:left;">Permit History</h6> 
+
+    	<table>
+    		<thead>
+    			<tr>
+    				<th>Type</th>
+    				<th>Date</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr>
+    				<td>CO/CC Release Date</td>
+    				<td>08/04/2014</td>
+    			</tr>
+    			<tr>
+    				<td>Bldg CO Release Date</td>
+    				<td>08/04/2014</td>
+    			</tr>
+    			<tr>
+    				<td>Revision Date</td>
+    				<td>06/27/2014</td>
+    			</tr>
+    			<tr>
+    				<td>Last Inspection Date</td>
+    				<td>08/04/2014</td>
+    			</tr>
+    		</tbody>
+    	</table>
+
+<a class="button-primary button" style="width:auto;" href="#">Request Inspection</a>
+<a class="button-primary button" style="width:auto;" href="#">Request Fire Inspection</a>
+
+    </div>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
