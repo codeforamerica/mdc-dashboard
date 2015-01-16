@@ -73,22 +73,19 @@ $(document).ready(function() {
 		if($(this).hasClass('active')) {
 			
 			$(this).removeClass('active');
+			language = 'en';
 		
 		} else {
 			
 			$(this).addClass('active reverse');
 		}
 		
-		if(language == 'es') {
+		newloc = loc.replace('-es.html','.html');
+		console.log("EN clicked, language is ES, newloc should be .html", newloc);
+		language = 'en';
 			
-			language = 'en';
-			newloc = loc.replace('-es.html','.html');
-			
-			window.location.href = newloc;
-					
-		}
-		
-		console.log(loc, language, newloc);
+		window.location.href = newloc;
+
 	})
 	
 	$('#es').click(function() {
@@ -96,6 +93,7 @@ $(document).ready(function() {
 		if($(this).hasClass('active')) {
 			
 			$(this).removeClass('active');
+			language = 'es';
 		
 		} else {
 			
@@ -106,13 +104,23 @@ $(document).ready(function() {
 		
 		if(language == 'en') {
 			
-			language == 'es';
+			//console.log("ES clicked, language is EN, newloc is -es.html");
+			
 			newloc = loc.replace('.html','-es.html');
+			language == 'es';
 			
 			window.location.href = newloc;
 			
-			console.log(window.location.href);
 		}
 	})
+	
+	//ernie's toggle
+	$("#expandtable tbody tr:even").addClass("toggle-row");
+	$("#expandtable tbody tr:not(.toggle-row)").hide();	
+	$("#expandtable tbody tr").click(function(){
+	    $(this).next('tr').toggle();
+	    // $(this).find(".arrow").toggleClass("up");
+	});
+
 	
 })
