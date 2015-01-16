@@ -4,6 +4,10 @@
 .bldg { background-color:#999; color:#fff; }
 .plum { background-color:#06c; color:#fff; } 
 
+.toggle-row {
+	cursor: pointer;
+}    
+
 @mixin border($color) {
 	
 	border:1px solid $color;

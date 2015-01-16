@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Inicio</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
@@ -27,8 +27,7 @@
      
   </head>
   
-  
-    <!-- nav partial -->
+  	<!-- nav partial -->
     <body> <!-- tag closed in html-foot -->
 
 <header>
@@ -36,9 +35,9 @@
 	<div class='row' id='language-toggle-wrapper'>
 
 	<ul class='right' id='language-toggle'>
-		<li class='left'><p>Por favor elija un idioma.</p>
-		<li class='button one column'>EN</li>
-		<li class='button one column active reverse'>ES</li>
+		<li class='left'><p>Por favor elija su idioma.</p>
+		<li class='button one column' id='en'>EN</li>
+		<li class='button one column active reverse' id='es'>ES</li>
 		<li class='button three columns'><a href='http://www.miamidade.gov/economy/'>Go to RER</a></li>
 	</ul>
 	
@@ -52,31 +51,31 @@
 	<li class="button active">Comprobar el estado de permiso</li>
 	<li class="button">Programe una inspección</li>
 	
+	
+	
 </nav>
 	
 </header>
-
-    <div class="container">
-	    
-      <!-- body partial, used for adding pages to layout -->
-      
+    
+    <div class="container WOOWOOW">
+        
 
 <form method="GET" action="results.html">
 
 	<div class='row center'>
 		
-		<h5>Vamos a ayudar a encontrar el estado de los permisos e inspecciones emitidos por el Condado de Miami-Dade.</h5>
+		<h5>Compruebe el estado de los permisos e inspecciones emitidos por Miami-Dade.</h5>
 		
 	</div>
 	
 	<div class='row'>
 				
-		<h3 style="margin-bottom:0;" class='bold'>¿Qué información tiene usted?</h3>
-		<h5>(Elija uno)</h5>
+		<h3 class='bold'>¿Qué información tiene usted?</h3>
+		<h5>(Elije uno)</h5>
 		
 	</div>
 
-	<div class='row center'>
+		<div class='row center'>
 				
 		<div class='faux-radio bold'>
 			
@@ -96,7 +95,7 @@
 				<div class="icon icon-white icon-icon-process-white"></div>
 				<div class="icon icon-green icon-icon-process-green hide"></div>
 			</label>
-			<p>Número proceso</p>
+			<p>Número de proceso</p>
 		</div>
 		
 		<div class='faux-radio bold'>
@@ -142,8 +141,8 @@
 	<div class='row center'>	
 		
 		<h2 id='identifier-header'></h2>
-		<input type="text" style="width:40rem;" name="permit-id" placeholder="Número de identificación o dirección">
-		<input value="Iniciar" type="submit" />
+		<input type="text" style="width:40rem;" name="permit-id" placeholder="">
+		<a class='button' href='results.html' id='submit-href'>Iniciar</a>
 	</div>
 </form>
 
@@ -151,11 +150,9 @@
 
 
 
-
-      
+        
     </div>
-  
-  
+    
 <footer>
 	
 	<p><span class='bold'>The Unnamed Project</span> by Team Miami-Dade: Mathias Gibson, Sophia Dengo, Ernie Hsiung. Build Week 2015.</p>
