@@ -41,7 +41,7 @@ $(document).ready(function() {
 		}
 		
 		$('#identifier-header').replaceWith('<h2 id="identifier-header">' + id + '</h2>');
-		var href;
+			var href;
 		
 		
 		$('#submit-href').attr('href', href);
@@ -57,6 +57,57 @@ $(document).ready(function() {
 		
 		$(this).find('.icon-green').addClass('hide');
 		$(this).find('.icon-white').removeClass('hide');
+	})
+	
+	var language = 'en';
+	var loc = window.location.href;
+	var newloc;
+	
+	$('#en').click(function() {
+		
+		if($(this).hasClass('active')) {
+			
+			$(this).removeClass('active');
+		
+		} else {
+			
+			$(this).addClass('active reverse');
+		}
+		
+		if(language == 'es') {
+			
+			language = 'en';
+			newloc = loc.replace('-es.html','.html');
+			
+			$(document).load( newloc, function() {
+			  alert( "Load was performed." );
+			});
+		}
+		
+		console.log(loc, language, newloc);
+	})
+	
+	$('#es').click(function() {
+		
+		if($(this).hasClass('active')) {
+			
+			$(this).removeClass('active');
+		
+		} else {
+			
+			$(this).addClass('active reverse');
+		}
+		
+		console.log(loc, language);
+		
+		if(language == 'en') {
+			
+			language == 'es';
+			newloc = loc.replace('.html','-es.html');
+			$(document).load( newloc, function() {
+			  alert( "Load was performed." );
+			});
+		}
 	})
 	
 })
