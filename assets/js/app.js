@@ -85,11 +85,7 @@ $(document).ready(function() {
 			newloc = loc.replace('-es.html','.html');
 			
 			window.location.href = newloc;
-			
-			
-			/*$('body').load( newloc, function() {
-			  alert( "Load was performed." );
-			});*/		
+					
 		}
 		
 		console.log(loc, language, newloc);
@@ -116,9 +112,6 @@ $(document).ready(function() {
 			window.location.href = newloc;
 			
 			console.log(window.location.href);
-			/*$('body').load( newloc, function() {
-			  alert( "Load was performed." );
-			});*/
 		}
 	})
 	
