@@ -84,9 +84,11 @@ $(document).ready(function() {
 			language = 'en';
 			newloc = loc.replace('-es.html','.html');
 			
-			$('body').load( newloc, function() {
+			window.location.href = newloc;
+			
+			/*$('body').load( newloc, function() {
 			  alert( "Load was performed." );
-			});
+			});*/
 		}
 		
 		console.log(loc, language, newloc);
@@ -109,9 +111,11 @@ $(document).ready(function() {
 			
 			language == 'es';
 			newloc = loc.replace('.html','-es.html');
-			$('body').load( newloc, function() {
+			
+			window.location.href = newloc;
+			/*$('body').load( newloc, function() {
 			  alert( "Load was performed." );
-			});
+			});*/
 		}
 	})
 	
