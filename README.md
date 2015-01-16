@@ -10,32 +10,10 @@ The purpose of this project is to iterate the [Miami-Dade County Permit inquiry 
 
 ## Technical Details
 
-The first iteration of the prototype was presented as a static prototype using HTML, CSS and jQuery due to time restraints. Build tools included the use of the following: grunt, Sass, assemble.io.
+The first iteration of the prototype was presented as a static prototype using HTML, CSS and jQuery due to time restraints. We used the Railway font provided as part of the skeleton framework and light iconography was provided by Font-Awesome. Build tools included the use of the following: grunt, Sass, compass, assemble.io.
 
-Our goal was to use stubbed data (in the form of JSON objects) and then to do research on whether it would be feasible to scrape single-form submissions (Ruby or Python library? KimonoLabs?) or use the [fixed data set that was provided from Code for Miami](https://github.com/Code-for-Miami/2013-14-Permits-Issued-Data-Set), taking advantage of a [data input into Socrata](https://brigades.opendatanetwork.com/LAND-USE/Miami-Dade-County-Permits-Subset-/jjtb-34fh), which [comes with a baked RESTful APIs](https://brigades.opendatanetwork.com/developers/docs/miami-dade-county-permits-subset-).
 
-### Installation Instructions
-
-```
-First install Node http://nodejs.org/download/. From the command line at root
-sudo npm update -g npm
-sudo npm install -g grunt-cli
-sudo npm install -g grunt-init
-git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
-
-Next up is Ruby, also at command line at the root
-We'll install RVM for safety's sake:
-\curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
-IF THAT FAILS with error 1, do: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" and then run the RVM curl command again
-
-http://code.tutsplus.com/tutorials/how-to-install-ruby-on-a-mac--net-21664
-go to step 2: load into the shell
-restart terminal after following Step 2.
-I'm installing Rails: gem install rails (just in case)
-and this to install Sass: gem install sass
-gem install compass (because we'll be using Compass to manage Gruntfile)
-npm install grunt-contrib-sass --save-dev
-```
+If we were the iterate on this prototype for the future, we would look into using stubbed JSON data to make this prototype dynamic (using a [fixed data set that was provided from Code for Miami](https://github.com/Code-for-Miami/2013-14-Permits-Issued-Data-Set)), and then investigate the feasibility to scrape single-form POST submissions (Ruby or Python library? KimonoLabs?) from the Miami-Dade County website itself.
 
 ## Team Members
 
