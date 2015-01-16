@@ -59,9 +59,15 @@ input[type="radio"].input_hidden {
   background-color: #aad315;
 }
 
+/* line 76, ../sass/app.scss */
+.button.active.reverse {
+  opacity: 1 !important;
+  color: #222 !important;
+}
+
 /* end utility classes */
 @media only screen and (min-width: 320px) {
-  /* line 81, ../sass/app.scss */
+  /* line 89, ../sass/app.scss */
   body {
     width: 100%;
     height: auto;
@@ -76,7 +82,7 @@ input[type="radio"].input_hidden {
 /* Larger than tablet */
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  /* line 106, ../sass/app.scss */
+  /* line 114, ../sass/app.scss */
   #language-toggle-wrapper {
     background-color: #aad315;
     width: 100%;
@@ -84,25 +90,31 @@ input[type="radio"].input_hidden {
     padding-bottom: 7px;
   }
 
-  /* line 114, ../sass/app.scss */
+  /* line 122, ../sass/app.scss */
   #language-toggle li {
     padding-right: 40px;
     padding-left: 25px;
     margin-bottom: 0;
   }
 
-  /* line 121, ../sass/app.scss */
+  /* line 129, ../sass/app.scss */
   #language-toggle li.six {
     padding-right: 30px;
   }
 
-  /* line 126, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   #language-toggle li.button {
     background-color: white;
     border-color: white;
+    opacity: .5;
   }
 
-  /* line 132, ../sass/app.scss */
+  /* line 141, ../sass/app.scss */
+  #language-toggle li.button:hover {
+    opacity: 1;
+  }
+
+  /* line 146, ../sass/app.scss */
   nav {
     width: 100%;
     margin: 0 auto;
@@ -110,48 +122,48 @@ input[type="radio"].input_hidden {
     color: red;
   }
 
-  /* line 140, ../sass/app.scss */
+  /* line 154, ../sass/app.scss */
   nav li {
     margin-top: 10px;
     display: inline-block;
     list-style: none;
   }
 
-  /* line 148, ../sass/app.scss */
+  /* line 162, ../sass/app.scss */
   nav .left.icon {
     margin-top: 0;
   }
 
-  /* line 153, ../sass/app.scss */
+  /* line 167, ../sass/app.scss */
   .container {
     width: 1200px;
     border: 1px solid red;
   }
 
-  /* line 160, ../sass/app.scss */
+  /* line 174, ../sass/app.scss */
   .button {
     width: 20%;
     border: 1px solid #aad315;
   }
 
-  /* line 166, ../sass/app.scss */
+  /* line 180, ../sass/app.scss */
   .container {
     margin-top: 30px;
   }
 
-  /* line 172, ../sass/app.scss */
+  /* line 186, ../sass/app.scss */
   .row {
     margin-bottom: 30px;
   }
 
-  /* line 176, ../sass/app.scss */
+  /* line 190, ../sass/app.scss */
   .faux-radio,
   .faux-radio img,
   .faux-radio .icon {
     cursor: pointer;
   }
 
-  /* line 184, ../sass/app.scss */
+  /* line 198, ../sass/app.scss */
   .faux-radio {
     -webkit-border-radius: 15px;
     border-radius: 15px;
@@ -167,13 +179,13 @@ input[type="radio"].input_hidden {
     margin-right: 15px;
   }
 
-  /* line 200, ../sass/app.scss */
+  /* line 214, ../sass/app.scss */
   .faux-radio:hover {
     color: #aad315;
     background-color: white;
   }
 
-  /* line 206, ../sass/app.scss */
+  /* line 220, ../sass/app.scss */
   .faux-radio .icon {
     display: block;
     width: 75px;
@@ -184,7 +196,7 @@ input[type="radio"].input_hidden {
     margin-top: 30px;
   }
 
-  /* line 218, ../sass/app.scss */
+  /* line 232, ../sass/app.scss */
   .faux-radio .icon p {
     padding-top: 100px;
   }

@@ -73,6 +73,14 @@ input[type="radio"].input_hidden {
 	background-color:#aad315;
 }
 
+.button.active.reverse {
+	
+	opacity:1 !important;
+	color:#222 !important;
+}
+
+
+
 
 /* end utility classes */
 
@@ -127,6 +135,12 @@ input[type="radio"].input_hidden {
 		
 		background-color:white;
 		border-color:white;
+		opacity:.5;
+	}
+	
+	#language-toggle li.button:hover {
+		
+		opacity:1;
 	}
 
 	nav {
