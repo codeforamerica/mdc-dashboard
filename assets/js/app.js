@@ -1,6 +1,19 @@
 $(document).ready(function() {
 	
 	var id = 'permit';	//set a default
+	var globalLanguage;
+	
+	if($('#en').hasClass('active')) {
+		
+		globalLanguage = 'en';
+		console.log("english is active", globalLanguage);
+	
+	} else {
+		
+		globalLanguage = 'es';
+	}
+	
+	console.log('hello world, language: ', globalLanguage);
 	
 	//smart radio buttons
 	$('.identifier').addClass('input_hidden');
@@ -10,10 +23,18 @@ $(document).ready(function() {
 		
 		//toggle UI
 		//pass ID to the rest of the form
-		id = $(this).find('.identifier').attr('id');;
+		id = $(this).find('.identifier').attr('id');
 		console.log('id:', id);
 		
-		setForm(id);
+		if(globalLanguage == 'en') {
+			
+			setForm(id);
+		
+		} else {
+			
+			setFormEs(id);
+		}
+		
 		
 		$.smoothScroll({
 		    
@@ -45,11 +66,37 @@ $(document).ready(function() {
 				break;
 		}
 		
-		$('#identifier-header').replaceWith('<h2 id="identifier-header">' + id + '</h2>');
-			var href;
+	}
+	
+	function setFormEs(id) {
 		
-		
-		$('#submit-href').attr('href', href);
+		console.log("form ID spanish");
+			switch (id) {
+				
+				case 'address':
+				
+					id = 'Favor de introducir una dirección';
+					href = 'results-address-es.html'; //load results-address
+					break;
+					
+				case 'folio':
+				
+					id = 'Favor de introducir un numero de Folio';
+					href = 'results-address-es.html'; //load results-address
+					break;
+					
+				default: 
+					
+					id = 'Favor de introducir un numero de ' + id;
+					href = 'results-es.html'; //load results.html
+					break;
+			}
+			
+			$('#identifier-header').replaceWith('<h2 id="identifier-header">' + id + '</h2>');
+				var href;
+			
+			
+			$('#submit-href').attr('href', href);
 	}
 	
 	$('.faux-radio').mouseover(function() {
