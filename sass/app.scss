@@ -62,11 +62,17 @@ input[type="radio"].input_hidden {
 	display:none !important;
 }
 
-#language-toggle li{
+#language-toggle {
 	
-	padding-right:40px;
-	padding-left:25px;
+	margin-bottom:0;
 }
+
+.button.active {
+	
+	color:white;
+	background-color:#aad315;
+}
+
 
 /* end utility classes */
 
@@ -97,24 +103,43 @@ input[type="radio"].input_hidden {
 /* Larger than desktop */
 @media (min-width: 1000px) {
 	
-	body {
+	#language-toggle-wrapper {
 		
-		width:1200px;
-		@include border(red);
+		background-color: #aad315;
+		width:100%;
+		padding-top:5px;
+		padding-bottom:7px;
 	}
 	
+	#language-toggle li{
+	
+		padding-right:40px;
+		padding-left:25px;
+		margin-bottom:0;
+	}
+	
+	#language-toggle li.six {
+		
+		padding-right:30px;
+	}
+	
+	#language-toggle li.button {
+		
+		background-color:white;
+		border-color:white;
+	}
+
 	nav {
 		
 		width:100%;
 		margin:0 auto;
-		height:175px;
-		@include border(blue);
+		height:105px;
 		color:red;
 	}
 	
 	nav li {
 		
-		margin-top:60px;
+		margin-top:10px;
 		display:inline-block;
 		list-style: none;
 		
@@ -124,6 +149,13 @@ input[type="radio"].input_hidden {
 		
 		margin-top:0;
 	}
+	
+	.container {
+		
+		width:1200px;
+		@include border(red);
+	}
+	
 	
 	.button {
 	
