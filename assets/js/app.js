@@ -15,6 +15,11 @@ $(document).ready(function() {
 		
 		setForm(id);
 		
+		$.smoothScroll({
+		    
+		    scrollTarget: '#identifier-header'
+		});
+		
 	})
 	
 	function setForm(id) {
