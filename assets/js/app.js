@@ -13,7 +13,7 @@ $(document).ready(function() {
 		globalLanguage = 'es';
 	}
 	
-	console.log('hello world, language: ', globalLanguage);
+	//console.log('hello world, language: ', globalLanguage);
 	
 	//smart radio buttons
 	$('.identifier').addClass('input_hidden');
@@ -35,7 +35,6 @@ $(document).ready(function() {
 			setFormEs(id);
 		}
 		
-		
 		$.smoothScroll({
 		    
 		    scrollTarget: '#identifier-header'
@@ -45,6 +44,7 @@ $(document).ready(function() {
 	
 	function setForm(id) {
 		
+		console.log('set english');
 		switch (id) {
 			
 			case 'address':
@@ -65,6 +65,12 @@ $(document).ready(function() {
 				href = 'results.html'; //load results.html
 				break;
 		}
+		
+		$('#identifier-header').replaceWith('<h2 id="identifier-header">' + id + '</h2>');
+				var href;
+			
+			
+			$('#submit-href').attr('href', href);
 		
 	}
 	

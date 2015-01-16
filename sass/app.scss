@@ -202,8 +202,9 @@ a:hover {
 	nav {
 		
 		width:100%;
-		margin:0 auto;
-		height:105px;	}
+		margin:0 auto;	
+		
+	}
 	
 	nav li {
 		
@@ -221,6 +222,8 @@ a:hover {
 	.container {
 		
 		width:1200px;
+		margin-top:10px;
+		
 	}
 	
 	
@@ -230,16 +233,22 @@ a:hover {
 		@include border(#aad315);
 	}
 	
-	.container {
-		
-		margin-top:30px;
-		
-	}
-	
 	.row {
 		
 		margin-bottom:30px;
 	}
+	
+	.row.first {
+		
+		margin-bottom:50px;
+		
+	}
+	
+	h3.bold {
+		
+		margin-bottom:10px;
+	}
+	
 	.faux-radio,
 	.faux-radio img,
 	.faux-radio .icon {
@@ -295,6 +304,11 @@ a:hover {
 		padding-bottom:30px;
 	}
 	footer p {
+		
+		margin-bottom:0;
+	}
+	
+	h5 {
 		
 		margin-bottom:0;
 	}

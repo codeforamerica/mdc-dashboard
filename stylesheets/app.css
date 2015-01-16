@@ -199,50 +199,55 @@ a:hover {
   nav {
     width: 100%;
     margin: 0 auto;
-    height: 105px;
   }
 
-  /* line 208, ../sass/app.scss */
+  /* line 209, ../sass/app.scss */
   nav li {
     margin-top: 10px;
     display: inline-block;
     list-style: none;
   }
 
-  /* line 216, ../sass/app.scss */
+  /* line 217, ../sass/app.scss */
   nav .left.icon {
     margin-top: 0;
   }
 
-  /* line 221, ../sass/app.scss */
+  /* line 222, ../sass/app.scss */
   .container {
     width: 1200px;
+    margin-top: 10px;
   }
 
-  /* line 227, ../sass/app.scss */
+  /* line 230, ../sass/app.scss */
   .button {
     width: 20%;
     border: 1px solid #aad315;
   }
 
-  /* line 233, ../sass/app.scss */
-  .container {
-    margin-top: 30px;
-  }
-
-  /* line 239, ../sass/app.scss */
+  /* line 236, ../sass/app.scss */
   .row {
     margin-bottom: 30px;
   }
 
-  /* line 243, ../sass/app.scss */
+  /* line 241, ../sass/app.scss */
+  .row.first {
+    margin-bottom: 50px;
+  }
+
+  /* line 247, ../sass/app.scss */
+  h3.bold {
+    margin-bottom: 10px;
+  }
+
+  /* line 252, ../sass/app.scss */
   .faux-radio,
   .faux-radio img,
   .faux-radio .icon {
     cursor: pointer;
   }
 
-  /* line 251, ../sass/app.scss */
+  /* line 260, ../sass/app.scss */
   .faux-radio {
     -webkit-border-radius: 15px;
     border-radius: 15px;
@@ -258,13 +263,13 @@ a:hover {
     margin-right: 15px;
   }
 
-  /* line 267, ../sass/app.scss */
+  /* line 276, ../sass/app.scss */
   .faux-radio:hover {
     color: #aad315;
     background-color: white;
   }
 
-  /* line 273, ../sass/app.scss */
+  /* line 282, ../sass/app.scss */
   .faux-radio .icon {
     display: block;
     width: 75px;
@@ -275,12 +280,12 @@ a:hover {
     margin-top: 30px;
   }
 
-  /* line 285, ../sass/app.scss */
+  /* line 294, ../sass/app.scss */
   .faux-radio .icon p {
     padding-top: 100px;
   }
 
-  /* line 290, ../sass/app.scss */
+  /* line 299, ../sass/app.scss */
   footer {
     color: #717070;
     border-top: 1px solid #dddddd;
@@ -288,8 +293,13 @@ a:hover {
     padding-bottom: 30px;
   }
 
-  /* line 297, ../sass/app.scss */
+  /* line 306, ../sass/app.scss */
   footer p {
+    margin-bottom: 0;
+  }
+
+  /* line 311, ../sass/app.scss */
+  h5 {
     margin-bottom: 0;
   }
 }
