@@ -193,9 +193,7 @@ a:hover {
 		
 		width:100%;
 		margin:0 auto;
-		height:105px;
-		color:red;
-	}
+		height:105px;	}
 	
 	nav li {
 		
@@ -213,7 +211,6 @@ a:hover {
 	.container {
 		
 		width:1200px;
-		@include border(red);
 	}
 	
 	

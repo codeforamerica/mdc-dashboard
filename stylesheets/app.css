@@ -170,51 +170,49 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     height: 105px;
-    color: red;
   }
 
-  /* line 200, ../sass/app.scss */
+  /* line 198, ../sass/app.scss */
   nav li {
     margin-top: 10px;
     display: inline-block;
     list-style: none;
   }
 
-  /* line 208, ../sass/app.scss */
+  /* line 206, ../sass/app.scss */
   nav .left.icon {
     margin-top: 0;
   }
 
-  /* line 213, ../sass/app.scss */
+  /* line 211, ../sass/app.scss */
   .container {
     width: 1200px;
-    border: 1px solid red;
   }
 
-  /* line 220, ../sass/app.scss */
+  /* line 217, ../sass/app.scss */
   .button {
     width: 20%;
     border: 1px solid #aad315;
   }
 
-  /* line 226, ../sass/app.scss */
+  /* line 223, ../sass/app.scss */
   .container {
     margin-top: 30px;
   }
 
-  /* line 232, ../sass/app.scss */
+  /* line 229, ../sass/app.scss */
   .row {
     margin-bottom: 30px;
   }
 
-  /* line 236, ../sass/app.scss */
+  /* line 233, ../sass/app.scss */
   .faux-radio,
   .faux-radio img,
   .faux-radio .icon {
     cursor: pointer;
   }
 
-  /* line 244, ../sass/app.scss */
+  /* line 241, ../sass/app.scss */
   .faux-radio {
     -webkit-border-radius: 15px;
     border-radius: 15px;
@@ -230,13 +228,13 @@ a:hover {
     margin-right: 15px;
   }
 
-  /* line 260, ../sass/app.scss */
+  /* line 257, ../sass/app.scss */
   .faux-radio:hover {
     color: #aad315;
     background-color: white;
   }
 
-  /* line 266, ../sass/app.scss */
+  /* line 263, ../sass/app.scss */
   .faux-radio .icon {
     display: block;
     width: 75px;
@@ -247,12 +245,12 @@ a:hover {
     margin-top: 30px;
   }
 
-  /* line 278, ../sass/app.scss */
+  /* line 275, ../sass/app.scss */
   .faux-radio .icon p {
     padding-top: 100px;
   }
 
-  /* line 283, ../sass/app.scss */
+  /* line 280, ../sass/app.scss */
   footer {
     color: #717070;
     border-top: 1px solid #dddddd;
@@ -260,7 +258,7 @@ a:hover {
     padding-bottom: 30px;
   }
 
-  /* line 290, ../sass/app.scss */
+  /* line 287, ../sass/app.scss */
   footer p {
     margin-bottom: 0;
   }
