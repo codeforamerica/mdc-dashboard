@@ -84,7 +84,7 @@ $(document).ready(function() {
 			language = 'en';
 			newloc = loc.replace('-es.html','.html');
 			
-			$(document).load( newloc, function() {
+			$('body').load( newloc, function() {
 			  alert( "Load was performed." );
 			});
 		}
@@ -109,7 +109,7 @@ $(document).ready(function() {
 			
 			language == 'es';
 			newloc = loc.replace('.html','-es.html');
-			$(document).load( newloc, function() {
+			$('body').load( newloc, function() {
 			  alert( "Load was performed." );
 			});
 		}
